@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <style>
+        body {
+            background-image: url('res/background.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+        .navbar a:hover {
+            border-color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+        }
+        .recommendations {
+            margin: 20px;
+        }
+        .recommendation {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for recommendations">
+            <button id="searchButton">Search</button>
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+    <div id="recommendations" class="recommendations"></div>
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>

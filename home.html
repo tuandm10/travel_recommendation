@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Recommendation</title>
+    <style>
+        body {
+            background-image: url('res/background.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+        .navbar a:hover {
+            border-color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 50px;
+            border-radius: 10px;
+        }
+        .recommendations {
+            margin: 20px;
+        }
+        .recommendation {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for recommendations">
+            <button id="searchButton">Search</button>
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Life is a journey</h1>
+        <p>Discover the most fascinating travel destinations around the world. From the serene beaches of the Maldives to the bustling streets of Tokyo, our website provides insights and recommendations to make your travel experience unforgettable. Explore hidden gems, cultural landmarks, and breathtaking natural wonders that will leave you in awe. Whether you're an adventure seeker or a leisure traveler, we have something for everyone. Start your journey with us and create memories that will last a lifetime.</p>
+    </div>
+    
+    <div id="recommendations" class="recommendations"></div>
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
